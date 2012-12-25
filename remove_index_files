@@ -1,0 +1,11 @@
+#!/bin/bash
+
+dir="foobar/"
+
+grep -l -r 'Password:' $dir | xargs rm
+
+rm cookies.txt
+rm $dir/x.php
+rm $dir/index.php
+
+# etc.

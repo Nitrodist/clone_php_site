@@ -1,0 +1,9 @@
+#!/bin/bash
+
+dir="foobar/"
+
+while true
+do
+  grep -r 'Password:' $dir | wc -l
+  sleep 60
+done
